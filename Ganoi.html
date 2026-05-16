@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ar" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gai Noi Restaurant — Asmaa Ali</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <script>tailwind.config={theme:{extend:{fontFamily:{sans:['Inter','sans-serif']},colors:{nf:{red:'#E50914',dark:'#0a0a0a'}}}}}</script>
+    <style>
+        *{margin:0;padding:0;box-sizing:border-box}body{font-family:'Inter',sans-serif;background:#0a0a0a;color:#fff}
+        .glass{background:rgba(255,255,255,0.03);backdrop-filter:blur(20px);-webkit-backdrop-filter:blur(20px);border:1px solid rgba(255,255,255,0.06)}
+        .glass-card{background:rgba(20,20,20,0.6);backdrop-filter:blur(24px);border:1px solid rgba(255,255,255,0.05);transition:all 0.5s cubic-bezier(0.23,1,0.32,1)}
+        .glass-card:hover{border-color:rgba(229,9,20,0.2);box-shadow:0 20px 60px rgba(0,0,0,0.4)}
+        .red-text{background:linear-gradient(135deg,#E50914,#ff4d58,#E50914);background-size:200% auto;-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;animation:gx 4s ease infinite}
+        @keyframes gx{0%,100%{background-position:0% 50%}50%{background-position:100% 50%}}
+        @keyframes reveal{from{opacity:0;transform:translateY(30px);filter:blur(8px)}to{opacity:1;transform:translateY(0);filter:blur(0)}}
+        .anim{animation:reveal 0.8s cubic-bezier(0.23,1,0.32,1) both}.anim-d1{animation:reveal 0.8s cubic-bezier(0.23,1,0.32,1) 0.1s both}
+        .scr{opacity:0;transform:translateY(30px);filter:blur(6px);transition:all 0.8s cubic-bezier(0.23,1,0.32,1)}.scr.vis{opacity:1;transform:translateY(0);filter:blur(0)}
+        .img-hover{transition:transform 0.7s cubic-bezier(0.23,1,0.32,1)}.img-hover:hover{transform:scale(1.03)}
+        ::-webkit-scrollbar{width:5px}::-webkit-scrollbar-track{background:#0a0a0a}::-webkit-scrollbar-thumb{background:rgba(229,9,20,0.4);border-radius:10px}
+    </style>
+</head>
+<body>
+    <div class="fixed top-0 left-0 right-0 z-50 bg-[#0a0a0a]/80 backdrop-blur-2xl border-b border-white/[0.04]">
+        <div class="max-w-7xl mx-auto px-6 lg:px-20 h-16 flex items-center justify-between">
+            <a href="index.html" class="flex items-center gap-3 group"><div class="w-9 h-9 rounded-full glass flex items-center justify-center group-hover:bg-nf-red/10 transition-colors"><i data-lucide="arrow-left" class="w-4 h-4 text-white/60 group-hover:text-nf-red transition-colors"></i></div><span class="text-[13px] font-light text-white/50 group-hover:text-white/80 transition-colors">Back to Portfolio</span></a>
+            <span class="text-[11px] text-white/20 uppercase tracking-widest">Project Detail</span>
+        </div>
+    </div>
+    <main class="pt-16">
+        <div class="relative h-[50vh] md:h-[60vh] overflow-hidden">
+            <img src="FK5YnbDzj.png" alt="Gai Noi Restaurant" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-[#0a0a0a] via-[#0a0a0a]/40 to-transparent"></div>
+            <div class="absolute bottom-0 left-0 right-0 p-6 lg:p-20">
+                <div class="anim inline-flex items-center gap-2 px-4 py-2 rounded-full glass mb-6"><span class="w-2 h-2 rounded-full bg-nf-red"></span><span class="text-[10px] font-bold text-white/50 uppercase tracking-widest">UX Case Study</span></div>
+                <h1 class="anim-d1 text-4xl md:text-5xl lg:text-6xl font-extralight tracking-tighter">Gai Noi Restaurant <span class="red-text font-light">Redesign</span></h1>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto px-6 lg:px-20 py-16">
+            <div class="grid md:grid-cols-3 gap-6 mb-16">
+                <div class="scr glass-card p-6 rounded-2xl"><div class="text-[10px] text-white/30 uppercase tracking-widest mb-3 font-bold">Role</div><div class="text-[15px] text-white/80">UI/UX Designer</div></div>
+                <div class="scr glass-card p-6 rounded-2xl" style="transition-delay:0.1s"><div class="text-[10px] text-white/30 uppercase tracking-widest mb-3 font-bold">Tools</div><div class="text-[15px] text-white/80">Figma</div></div>
+                <div class="scr glass-card p-6 rounded-2xl" style="transition-delay:0.2s"><div class="text-[10px] text-white/30 uppercase tracking-widest mb-3 font-bold">Category</div><div class="text-[15px] text-white/80">UX Case Study</div></div>
+            </div>
+            <div class="scr mb-16">
+                <h2 class="text-2xl font-light mb-4">Project <span class="red-text font-medium">Overview</span></h2>
+                <p class="text-[15px] text-white/45 leading-[1.8] max-w-3xl">A complete UI/UX case study redesigning the Gai Noi restaurant website. The process included user research with interviews and surveys, competitive analysis of similar restaurant websites, user journey mapping, wireframing, high-fidelity mockups, and usability testing — resulting in a refined menu browsing and reservation experience.</p>
+            </div>
+
+            <!-- Process -->
+            <div class="scr mb-16">
+                <h2 class="text-2xl font-light mb-6">Design <span class="red-text font-medium">Process</span></h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+                    <div class="glass-card p-6 rounded-2xl text-center"><div class="w-10 h-10 rounded-full bg-nf-red/10 border border-nf-red/15 flex items-center justify-center mx-auto mb-3"><span class="text-nf-red font-bold text-[13px]">01</span></div><h4 class="font-medium text-[14px] mb-1">Research</h4><p class="text-[12px] text-white/35">User interviews, surveys, competitive analysis</p></div>
+                    <div class="glass-card p-6 rounded-2xl text-center"><div class="w-10 h-10 rounded-full bg-nf-red/10 border border-nf-red/15 flex items-center justify-center mx-auto mb-3"><span class="text-nf-red font-bold text-[13px]">02</span></div><h4 class="font-medium text-[14px] mb-1">Define</h4><p class="text-[12px] text-white/35">Personas, journey maps, pain points</p></div>
+                    <div class="glass-card p-6 rounded-2xl text-center"><div class="w-10 h-10 rounded-full bg-nf-red/10 border border-nf-red/15 flex items-center justify-center mx-auto mb-3"><span class="text-nf-red font-bold text-[13px]">03</span></div><h4 class="font-medium text-[14px] mb-1">Design</h4><p class="text-[12px] text-white/35">Wireframes, high-fidelity mockups</p></div>
+                    <div class="glass-card p-6 rounded-2xl text-center"><div class="w-10 h-10 rounded-full bg-nf-red/10 border border-nf-red/15 flex items-center justify-center mx-auto mb-3"><span class="text-nf-red font-bold text-[13px]">04</span></div><h4 class="font-medium text-[14px] mb-1">Test</h4><p class="text-[12px] text-white/35">Usability testing, iterations</p></div>
+                </div>
+            </div>
+
+            <div class="scr mb-16">
+                <h2 class="text-2xl font-light mb-6">Design <span class="red-text font-medium">Screens</span></h2>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div class="rounded-2xl overflow-hidden glass-card"><img src="se1.jpg" alt="Homepage" class="w-full h-auto object-cover img-hover"></div>
+                    <div class="rounded-2xl overflow-hidden glass-card"><img src="se2.jpg" alt="Menu Page" class="w-full h-auto object-cover img-hover"></div>
+                    <div class="rounded-2xl overflow-hidden glass-card"><img src="se3.jpg" alt="Reservation" class="w-full h-auto object-cover img-hover"></div>
+                    <div class="rounded-2xl overflow-hidden glass-card"><img src="se4.jpg" alt="Mobile View" class="w-full h-auto  object-cover img-hover"></div>
+                </div>
+            </div>
+            <div class="scr mb-16">
+                <h2 class="text-2xl font-light mb-6">Key <span class="red-text font-medium">Deliverables</span></h2>
+                <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+                    <div class="glass-card p-5 rounded-2xl flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-nf-red flex-shrink-0"></i><span class="text-[14px] text-white/60">User Research Report</span></div>
+                    <div class="glass-card p-5 rounded-2xl flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-nf-red flex-shrink-0"></i><span class="text-[14px] text-white/60">Wireframes</span></div>
+                    <div class="glass-card p-5 rounded-2xl flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-nf-red flex-shrink-0"></i><span class="text-[14px] text-white/60">Hi-Fi Mockups</span></div>
+                    <div class="glass-card p-5 rounded-2xl flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-nf-red flex-shrink-0"></i><span class="text-[14px] text-white/60">Interactive Prototype</span></div>
+                    <div class="glass-card p-5 rounded-2xl flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-nf-red flex-shrink-0"></i><span class="text-[14px] text-white/60">Usability Test Results</span></div>
+                    <div class="glass-card p-5 rounded-2xl flex items-center gap-3"><i data-lucide="check-circle-2" class="w-5 h-5 text-nf-red flex-shrink-0"></i><span class="text-[14px] text-white/60">Responsive Design</span></div>
+                </div>
+            </div>
+            <div class="text-center pt-8 border-t border-white/[0.04]">
+                <a href="index.html#projects" class="inline-flex items-center gap-2 px-7 py-3.5 glass rounded-full text-white/60 text-[11px] font-bold uppercase tracking-widest hover:text-white hover:border-nf-red/20 transition-all"><i data-lucide="arrow-left" class="w-4 h-4"></i> All Projects</a>
+            </div>
+        </div>
+    </main>
+    <script>lucide.createIcons();const io=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('vis')})},{threshold:0.1});document.querySelectorAll('.scr').forEach(el=>io.observe(el));</script>
+</body>
+</html>
